@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{15AE3F22-17F1-4173-8B5C-9B12EE65DD02}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>My_Andromax.My.MyApplication</StartupObject>
+    <RootNamespace>My_Andromax</RootNamespace>
+    <AssemblyName>My Andromax</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>My Andromax.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>My Andromax.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Advanced.Designer.vb">
+      <DependentUpon>Advanced.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Advanced.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrowserMifi.Designer.vb">
+      <DependentUpon>BrowserMifi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BrowserMifi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FloatingInfo.Designer.vb">
+      <DependentUpon>FloatingInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FloatingInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Advanced.resx">
+      <DependentUpon>Advanced.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrowserMifi.resx">
+      <DependentUpon>BrowserMifi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FloatingInfo.resx">
+      <DependentUpon>FloatingInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disabled-0.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disabled-1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disabled-2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disabled-3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disabled-4.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disabled-5.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no-service.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roaming-0.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roaming-1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roaming-2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roaming-3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roaming-4.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roaming-5.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signal-0.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signal-1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signal-2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signal-3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signal-4.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signal-5.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sms.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sms-received.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sms-received-img.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_signal_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_signal_02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_signal_03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_signal_04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_signal_05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_signal_00.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_signal_00_result.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_signal_01_result.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_signal_02_result.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_signal_03_result.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_signal_04_result.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_signal_05_result.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\devices.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disabled-0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disabled-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disabled-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disabled-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disabled-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disabled-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no-service.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roaming-0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roaming-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roaming-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roaming-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roaming-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roaming-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signal-0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signal-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signal-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signal-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signal-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signal-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sms.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wifi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charging.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notcharging.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charging1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notcharging1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charginglogo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
